@@ -17,7 +17,7 @@ method('get')
 header('accepts', 'application/json')
 ```
 
-Give it write permissions:
+Give it execution permissions:
 ```
 chmod +x my_request_file.js
 ```
