@@ -1,0 +1,23 @@
+{
+  "name": "joj",
+  "version": "1.0.0",
+  "description": "Lightweight CLI http client. Manage your request collection with plain javascript files.",
+  "main": "joj.js",
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "rest",
+    "http"
+  ],
+  "author": "jairovsky",
+  "license": "MIT",
+  "bin": {
+    "joj": "./joj.js"
+  }
+}
