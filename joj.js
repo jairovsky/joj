@@ -50,11 +50,13 @@ global.header = (h, v) => req.headers[h] = v
 require(process.cwd()+'/'+file)
 
 function print(r) {
-    process.stdout.write(JSON.stringify({
-        headers: r.headers,
-        body: r.data,
-        status: r.status
-    }))
+    if (typeof r !== 'undefined') {
+        process.stdout.write(JSON.stringify({
+            headers: r.headers || null,
+            body: r.data || null,
+            status: r.status || null
+        }))
+    }
 }
 
 ax({url: req.url, method: req.method, data: req.body, headers: req.headers})
