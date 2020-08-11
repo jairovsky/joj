@@ -57,6 +57,6 @@ function print(r) {
     }))
 }
 
-ax({url: req.url, method: req.method})
+ax({url: req.url, method: req.method, data: req.body, headers: req.headers})
     .then(print)
     .catch(e => print(e.response))
